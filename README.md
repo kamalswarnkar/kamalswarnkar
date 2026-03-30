@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="200"/>
+  <img src="https://capsule-render.vercel.app/api?type=circle&color=00ff00&height=200&section=header&animation=fadeIn" />
 </p>
 
 ---
