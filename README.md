@@ -56,9 +56,19 @@ Mission: Build powerful real-world systems & dominate top internships
 
 ## 📊 LIVE SYSTEM ANALYTICS
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Repositories-20+-00FF00?style=for-the-badge&logo=github&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Total_Commits-240+-00FF00?style=for-the-badge&logo=git&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Projects_Built-5+-00FF00?style=for-the-badge&logo=vercel&logoColor=black"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/DSA_Problems-100+-00FF00?style=for-the-badge&logo=leetcode&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Focus-AI%20%2B%20Backend-00FF00?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Actively%20Building-00FF00?style=for-the-badge"/>
+</p>
+
 <p align="center"> 
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=kamalswarnkar&layout=compact&theme=tokyonight&border_color=00FF00" />
-  <br/> 
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=kamalswarnkar&theme=tokyonight&border=00FF00&ring=00FF00&fire=00FF00" /> 
 </p>
 
