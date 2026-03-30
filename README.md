@@ -56,10 +56,10 @@ Mission: Build powerful real-world systems & dominate top internships
 
 ## 📊 LIVE SYSTEM ANALYTICS
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kamalswarnkar&show_icons=true&theme=tokyonight&border_color=00FF00&title_color=00FF00&icon_color=00FF00&cache_seconds=1800" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kamalswarnkar&layout=compact&theme=tokyonight&border_color=00FF00&cache_seconds=1800" />
+<p align="center"> 
+  <img src="https://github-readme-stats.vercel.app/api?username=kamalswarnkar&show_icons=true&theme=tokyonight&border_color=00FF00&title_color=00FF00&icon_color=00FF00" /> 
+  <br/> 
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kamalswarnkar&theme=tokyonight&border=00FF00&ring=00FF00&fire=00FF00" /> 
 </p>
 
 <pre>
