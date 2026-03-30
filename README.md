@@ -30,7 +30,7 @@ Mission: Build powerful real-world systems & dominate top internships
 ## ⚙️ OMNITRIX CORE (TECH STACK)
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,django,cpp,js,html,css,git,github" />
+  <img src="https://skillicons.dev/icons?i=python,django,c,js,html,css,git,github" />
 </p>
 
 ---
