@@ -1,7 +1,7 @@
 <h1 align="center">🟢 OMNITRIX INTERFACE INITIALIZING...</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=26&duration=2500&color=00FF00&center=true&vCenter=true&width=700&lines=Accessing+DNA+Profile...;Kamal+Swarnkar+Identified;AI+%2B+Backend+Developer;Django+%7C+Machine+Learning;300%2B+DSA+Problems+Solved;System+Online+⚡" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=26&duration=2500&color=00FF00&center=true&vCenter=true&width=700&lines=Accessing+DNA+Profile...;Kamal+Swarnkar+Identified;AI+%2B+Backend+Developer;Django+%7C+Machine+Learning;100%2B+DSA+Problems+Solved;System+Online+⚡" />
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@
 
 ---
 
-## 🧬 DNA PROFILE MODULE 
+## 🧬 DNA PROFILE MODULE
 
 ```yaml
 Name: Kamal Swarnkar
@@ -57,10 +57,20 @@ Mission: Build powerful real-world systems & dominate top internships
 ## 📊 LIVE SYSTEM ANALYTICS
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kamalswarnkar&show_icons=true&theme=tokyonight&border_color=00FF00&title_color=00FF00&icon_color=00FF00" />
+  <img src="https://github-readme-stats.vercel.app/api?username=kamalswarnkar&show_icons=true&theme=tokyonight&border_color=00FF00&title_color=00FF00&icon_color=00FF00&cache_seconds=1800" />
   <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kamalswarnkar&theme=tokyonight&border=00FF00&ring=00FF00&fire=00FF00" />
+  <img src="https://streak-stats.demolab.com?user=kamalswarnkar&theme=tokyonight&border=00FF00" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kamalswarnkar&layout=compact&theme=tokyonight&border_color=00FF00" />
 </p>
+
+<pre>
+🟢 Total Contributions (1 Year): 240+
+🟢 Monthly Commits Peak: 90+
+🟢 Active Repositories: 20+
+🟢 Projects Built: 5+
+🟢 DSA Problems Solved: 100+ (Target → 500)
+</pre>
 
 ---
 
