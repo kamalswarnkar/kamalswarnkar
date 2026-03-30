@@ -66,7 +66,7 @@ Mission: Build powerful real-world systems & dominate top internships
 
 ## 🧠 TRAINING SIMULATION
 
-* 🟢 300+ DSA Problems Solved
+* 🟢 100+ DSA Problems Solved
 * 🟢 Backend + AI Systems Mastery
 * 🟢 Building production-ready projects
 
