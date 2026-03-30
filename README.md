@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Omnitrix_%28Ben_10%29.png/220px-Omnitrix_%28Ben_10%29.png" width="140"/>
+  <img src="https://tenor.com/view/omnitrix-ben-10-alien-gif-11117491757260134691" width="140"/>
 </p>
 
 ---
