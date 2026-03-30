@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=2000&color=00FF00&center=true&vCenter=true&width=400&lines=Initializing+Omnitrix...;Loading+DNA+Sequences...;System+Ready..." />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=00ff00&height=100&section=header&text=DNA%20SCAN%20IN%20PROGRESS&fontColor=000000&animation=blinking" />
 </p>
 
 ---
