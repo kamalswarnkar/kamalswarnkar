@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=circle&color=00ff00&height=200&section=header&animation=fadeIn" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=2000&color=00FF00&center=true&vCenter=true&width=400&lines=Initializing+Omnitrix...;Loading+DNA+Sequences...;System+Ready..." />
 </p>
 
 ---
