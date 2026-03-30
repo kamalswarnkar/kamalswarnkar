@@ -5,7 +5,11 @@
 </p>
 
 <p align="center">
-  <img src="https://media.tenor.com/2uyENRmiUt0AAAAC/ben10-omnitrix.gif" width="180"/>
+  <img src="https://readme-typing-svg.herokuapp.com?size=20&duration=1500&color=00FF00&center=true&vCenter=true&width=400&lines=Calibrating+Omnitrix...;Aligning+DNA+Matrix...;Ready+to+Transform..." />
+</p>
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Omnitrix_%28Ben_10%29.png/220px-Omnitrix_%28Ben_10%29.png" width="140"/>
 </p>
 
 ---
