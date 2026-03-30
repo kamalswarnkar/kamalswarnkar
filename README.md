@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=00ff00&height=100&section=header&text=DNA%20SCAN%20IN%20PROGRESS&fontColor=000000&animation=blinking" />
+  <img src="https://media.tenor.com/2uyENRmiUt0AAAAC/ben10-omnitrix.gif" width="180"/>
 </p>
 
 ---
