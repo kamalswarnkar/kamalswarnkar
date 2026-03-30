@@ -14,7 +14,7 @@
 
 ---
 
-##🧬 DNA PROFILE MODULE 
+## 🧬 DNA PROFILE MODULE 
 
 ```yaml
 Name: Kamal Swarnkar
