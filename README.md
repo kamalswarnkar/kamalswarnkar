@@ -62,7 +62,7 @@ Mission: Build scalable real-world systems and grow into advanced AI engineering
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kamalswarnkar&theme=chartreuse-dark&hide_border=true&background=0D1117" />
+  <img src="https://streak-stats.demolab.com?user=kamalswarnkar&theme=chartreuse-dark&hide_border=true&background=0D1117" />
 </p>
 
 <p align="center">
