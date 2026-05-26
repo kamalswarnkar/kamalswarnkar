@@ -58,7 +58,7 @@ Mission: Build scalable real-world systems and grow into advanced AI engineering
 ## DEVELOPMENT METRICS
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kamalswarnkar&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=kamalswarnkar&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117" />
 </p>
 
 <p align="center">
