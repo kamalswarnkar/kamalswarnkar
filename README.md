@@ -118,7 +118,7 @@ Mission: Build scalable real-world systems and grow into advanced AI engineering
 ## PHILOSOPHY
 
 > “Don’t wait for originality to begin; even creation starts from something.
-> You’re never at the starting line — only at the next step of evolution.”
+> You’re never at the starting line, only at the next step of evolution.”
 
 ---
 
