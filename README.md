@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7TKsQ8UQ0Q6xG6fK/giphy.gif" width="240"/>
+  <img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/omnitrix-core.webp" width="240"/>
 </p>
 
 ---
