@@ -18,11 +18,11 @@
 
 ```yaml
 Name: Kamal Swarnkar
-Role: AI + Backend Developer
-Focus: Backend Systems • Machine Learning • Problem Solving
+Role: AI, ML + Backend Developer
+Focus: Backend Systems • Artificial Intelligence • Machine Learning • Problem Solving
 Tech Interests: AI Systems • System Design • ML Integration
 Status: Continuously Building & Learning
-Mission: Build scalable real-world systems and grow into advanced AI engineering
+Mission: Build scalable real-world systems and grow into advanced AI-ML engineering
 ```
 
 ---
