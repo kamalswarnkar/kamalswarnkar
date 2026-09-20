@@ -90,6 +90,10 @@ def fetch():
     first = gql(PROFILE_Q, {"login": USER, "prQuery": f"author:{USER} type:pr"})
     prof = first["user"]
     pr_count = max(first["prSearch"]["issueCount"], prof["pullRequests"]["totalCount"])
+    print(
+        f"pull requests: search={first['prSearch']['issueCount']} "
+        f"field={prof['pullRequests']['totalCount']} -> using {pr_count}"
+    )
     years = prof["contributionsCollection"]["contributionYears"]
     counts = {}
     commits = 0
@@ -202,9 +206,13 @@ def card_title(text):
 
 def ring(cx, cy, r, fraction, stroke_w=8):
     circ = 2 * math.pi * r
+    name = f"sweep{int(cx)}"
     return (
+        f'    <style>@keyframes {name} {{ from {{ stroke-dasharray: 0 {circ:.1f}; }} }} '
+        f'.{name} {{ animation: {name} 1.6s cubic-bezier(.2,.7,.2,1) both; }} '
+        f'@media (prefers-reduced-motion: reduce) {{ .{name} {{ animation: none; }} }}</style>\n'
         f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="#1E2A47" stroke-width="{stroke_w}"/>\n'
-        f'    <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#accent)" stroke-width="{stroke_w}" '
+        f'    <circle class="{name}" cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="url(#accent)" stroke-width="{stroke_w}" '
         f'stroke-linecap="round" stroke-dasharray="{circ * fraction:.1f} {circ:.1f}" '
         f'transform="rotate(-90 {cx} {cy})"/>\n'
     )
@@ -280,13 +288,48 @@ def activity_svg(m, today, span=30):
         y = bottom - i * (bottom - top) / 4
         out += f'    <line x1="{left}" y1="{y:.1f}" x2="{right}" y2="{y:.1f}" stroke="#26314D" stroke-dasharray="3 5"/>\n'
         out += f'    <text x="{left - 12}" y="{y + 4:.1f}" font-size="11" fill="#64748B" text-anchor="end">{int(ymax * i / 4)}</text>\n'
-    pts = " ".join(f"{x:.1f},{y:.1f}" for x, y in zip(xs, ys))
-    area = f"{xs[0]:.1f},{bottom} {pts} {xs[-1]:.1f},{bottom}"
-    out += f'    <polygon points="{area}" fill="url(#area)"/>\n'
-    out += f'    <polyline points="{pts}" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>\n'
-    for x, y, v in zip(xs, ys, vals):
-        if v > 0:
-            out += f'    <circle cx="{x:.1f}" cy="{y:.1f}" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>\n'
+    path = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in zip(xs, ys))
+    area = f"{path} L {xs[-1]:.1f},{bottom} L {xs[0]:.1f},{bottom} Z"
+
+    # Animation: the line draws itself left to right, dots pop in as it reaches them,
+    # everything holds for a few seconds, fades out and plays again (so it is seen whenever
+    # the visitor scrolls here).
+    cycle = 10  # seconds
+    cum = [0.0]
+    for i in range(1, span):
+        cum.append(cum[-1] + math.hypot(xs[i] - xs[i - 1], ys[i] - ys[i - 1]))
+    total_len = max(cum[-1], 1.0)
+    dash = math.ceil(total_len) + 2  # slightly longer than the path so no gap remains at the end
+    css = [
+        f".draw {{ animation: draw {cycle}s linear infinite; }}",
+        f".areain {{ animation: areain {cycle}s linear infinite; }}",
+        f"@keyframes draw {{ 0%, 3.9% {{ stroke-dashoffset: {dash}; opacity: 0; }} 4% {{ stroke-dashoffset: {dash}; opacity: 1; }} "
+        "36% { stroke-dashoffset: 0; opacity: 1; } 90% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }",
+        "@keyframes areain { 0%, 20% { opacity: 0; } 42% { opacity: 1; } 90% { opacity: 1; } 100% { opacity: 0; } }",
+    ]
+    dots = []
+    for i, (x, y, v) in enumerate(zip(xs, ys, vals)):
+        if v <= 0:
+            continue
+        p = 4 + 32 * cum[i] / total_len
+        css.append(f".pop{i} {{ animation: pop{i} {cycle}s linear infinite; }}")
+        css.append(
+            f"@keyframes pop{i} {{ 0%, {p:.1f}% {{ opacity: 0; }} {p + 1.5:.1f}% {{ opacity: 1; }} "
+            "90% { opacity: 1; } 100% { opacity: 0; } }"
+        )
+        dots.append(
+            f'    <circle class="pop{i}" cx="{x:.1f}" cy="{y:.1f}" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>\n'
+        )
+    css.append(
+        "@media (prefers-reduced-motion: reduce) { .draw, .areain, [class^=pop] { animation: none; } }"
+    )
+    out += "    <style>" + " ".join(css) + "</style>\n"
+    out += f'    <path class="areain" d="{area}" fill="url(#area)"/>\n'
+    out += (
+        f'    <path class="draw" d="{path}" stroke-dasharray="{dash}" stroke-dashoffset="0" fill="none" '
+        'stroke="url(#accent)" stroke-width="2.5" stroke-linejoin="round"/>\n'
+    )
+    out += "".join(dots)
     for i in range(0, span, 5):
         out += f'    <text x="{xs[i]:.1f}" y="{bottom + 24}" font-size="11" fill="#64748B" text-anchor="middle">{fmt_day(days[i])}</text>\n'
     out += f'    <text x="{xs[-1]:.1f}" y="{bottom + 24}" font-size="11" font-weight="600" fill="#94A3B8" text-anchor="middle">Today</text>\n'
