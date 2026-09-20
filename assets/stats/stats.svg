@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="205" viewBox="0 0 495 205" role="img" aria-labelledby="t d">
-  <title id="t">GitHub stats</title>
-  <desc id="d">Stars, commits, pull requests, issues and overall grade</desc>
+  <title id="t">GitHub overview</title>
+  <desc id="d">Repositories, commits, languages and recent activity</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0B1120"/><stop offset="0.6" stop-color="#111936"/><stop offset="1" stop-color="#1B1F4B"/>
@@ -18,19 +18,20 @@
   <g font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif">
     <text x="30" y="42" font-size="18" font-weight="700" fill="#F8FAFC">Kamal's GitHub Stats</text>
     <rect x="30" y="52" width="44" height="3" rx="1.5" fill="url(#accent)"/>
-    <text x="30" y="90" font-size="14" fill="#94A3B8">Total Stars Earned</text>
-    <text x="285" y="90" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">1</text>
+    <text x="30" y="90" font-size="14" fill="#94A3B8">Public Repositories</text>
+    <text x="285" y="90" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">23</text>
     <text x="30" y="115" font-size="14" fill="#94A3B8">Total Commits</text>
-    <text x="285" y="115" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">564</text>
-    <text x="30" y="140" font-size="14" fill="#94A3B8">Total Pull Requests</text>
-    <text x="285" y="140" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">0</text>
-    <text x="30" y="165" font-size="14" fill="#94A3B8">Total Issues</text>
-    <text x="285" y="165" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">0</text>
-    <text x="30" y="190" font-size="14" fill="#94A3B8">Contributed To</text>
-    <text x="285" y="190" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">3</text>
+    <text x="285" y="115" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">565</text>
+    <text x="30" y="140" font-size="14" fill="#94A3B8">Languages Used</text>
+    <text x="285" y="140" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">16</text>
+    <text x="30" y="165" font-size="14" fill="#94A3B8">Contributed To</text>
+    <text x="285" y="165" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">3</text>
+    <text x="30" y="190" font-size="14" fill="#94A3B8">Followers</text>
+    <text x="285" y="190" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">9</text>
     <circle cx="395" cy="112" r="44" fill="none" stroke="#1E2A47" stroke-width="8"/>
-    <circle cx="395" cy="112" r="44" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="27.6 276.5" transform="rotate(-90 395 112)"/>
-    <text x="395" y="124" font-size="34" font-weight="800" fill="#F8FAFC" text-anchor="middle">C</text>
-    <text x="395" y="180" font-size="11" letter-spacing="1.5" fill="#64748B" text-anchor="middle">OVERALL GRADE</text>
+    <circle cx="395" cy="112" r="44" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="190.5 276.5" transform="rotate(-90 395 112)"/>
+    <text x="395" y="122" font-size="32" font-weight="800" fill="#F8FAFC" text-anchor="middle">62</text>
+    <text x="395" y="140" font-size="11" fill="#94A3B8" text-anchor="middle">of 90 days</text>
+    <text x="395" y="180" font-size="11" letter-spacing="1.5" fill="#64748B" text-anchor="middle">ACTIVE DAYS</text>
   </g>
 </svg>
