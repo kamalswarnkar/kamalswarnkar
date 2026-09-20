@@ -4,22 +4,25 @@
 
 <br>
 
-<a href="https://portfolio-kamal-four.vercel.app"><img src="https://img.shields.io/badge/Portfolio-6366F1?style=flat-square" alt="Portfolio"></a>
-<a href="https://www.linkedin.com/in/kamal-swarnkar-93x/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square" alt="LinkedIn"></a>
-<a href="mailto:swarnkar889@gmail.com"><img src="https://img.shields.io/badge/Email-0F172A?style=flat-square" alt="Email"></a>
-<img src="https://img.shields.io/badge/Open%20to-ML%20%2F%20AI%20internships-16A34A?style=flat-square" alt="Open to ML / AI internships">
+<img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/cards/status.svg" alt="Open to ML / AI internships" height="44">
+
+<br><br>
+
+<a href="https://portfolio-kamal-four.vercel.app"><img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/cards/portfolio.svg" alt="Portfolio" width="32%"></a>
+<a href="https://www.linkedin.com/in/kamal-swarnkar-93x/"><img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/cards/linkedin.svg" alt="LinkedIn" width="32%"></a>
+<a href="mailto:swarnkar889@gmail.com"><img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/cards/email.svg" alt="Email" width="32%"></a>
 
 </div>
 
 ## About me
 
-I'm a B.Tech Computer Science & Engineering student (AI/ML specialization) at Lovely Professional University. I like taking machine learning all the way from a notebook experiment to something that runs reliably behind an API. My projects cover the full workflow: feature engineering, benchmarking models, honest evaluation, and the asynchronous backends that serve them.
+I'm a B.Tech Computer Science & Engineering student (AI/ML specialization) at Lovely Professional University. I work across classical machine learning and applied AI: training and evaluating models on one side, building LLM-powered tools and automation on the other, and putting both behind reliable, asynchronous backends.
 
 I'm looking for **ML / AI internships** where I can work on real experiments, learn from experienced engineers, and grow toward applied AI engineering.
 
 - **Education:** B.Tech CSE (AI/ML specialization), Lovely Professional University, CGPA 8.90
 - **GATE 2026 (CS/IT):** score 383, AIR 21,411, qualified in the first attempt
-- **Focus:** machine learning, text classification and scoring pipelines, ML-serving backends
+- **Focus:** machine learning (classification, scoring pipelines), applied AI (local LLMs, automation), and the backends that serve them
 - **Currently:** strengthening ML fundamentals and moving into deep learning (PyTorch, Hugging Face)
 
 ## Featured projects
@@ -51,7 +54,10 @@ I'm looking for **ML / AI internships** where I can work on real experiments, le
 
 <sub>Live demos run on free hosting, so the first visit may take a few seconds to wake up.</sub>
 
-**Also built: AI Clipping Studio.** A fully local, offline tool that turns long videos into short vertical clips: transcription with faster-whisper, moment selection with local LLMs through Ollama, and rendering with FFmpeg. No cloud APIs.
+## Applied AI work
+
+- **AI Clipping Studio:** a fully local, offline tool that turns long videos into short vertical clips. It transcribes with faster-whisper, picks the best moments with local LLMs through Ollama, and renders with FFmpeg. No cloud APIs.
+- **Lead-scoring automation:** an n8n workflow that scores incoming contact-form leads as Hot, Warm or Cold and drafts a suggested reply, using a local Ollama model instead of a paid API.
 
 ## Technical skills
 
@@ -59,10 +65,23 @@ I'm looking for **ML / AI internships** where I can work on real experiments, le
 |---|---|
 | **Machine learning** | `Scikit-learn` `XGBoost` `Pandas` `NumPy` `spaCy` `NLTK` `Matplotlib` `Seaborn` |
 | **ML workflow** | Feature engineering (TF-IDF) · model benchmarking · train/test evaluation · accuracy and F1-score |
+| **Applied AI & automation** | `Ollama` `faster-whisper` `n8n` `Prompt engineering` |
 | **Languages** | `Python` `C` `JavaScript` |
 | **Backend & data** | `Django` `Django REST Framework` `Celery` `Redis` `PostgreSQL` `JWT` |
-| **Local LLM tooling** | `Ollama` `faster-whisper` |
 | **Tools & deployment** | `Git` `Docker` `Jupyter / Google Colab` `Postman` `Vercel` `Render` `Railway` |
+
+## Development activity
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/stats/stats.svg" alt="GitHub stats" width="49%">
+<img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/stats/streak.svg" alt="Contribution streak" width="49%">
+</p>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/stats/activity.svg" alt="Contribution activity over the last 30 days" width="100%">
+</p>
+
+<sub>Generated from my GitHub data by a scheduled GitHub Action and refreshed daily.</sub>
 
 ## Highlights
 
