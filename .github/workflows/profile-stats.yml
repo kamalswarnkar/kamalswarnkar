@@ -1,1 +1,39 @@
+name: Update profile stats
 
+on:
+  schedule:
+    - cron: "17 3 * * *" # every day at 03:17 UTC
+  workflow_dispatch: # lets you run it by hand from the Actions tab
+  push:
+    paths:
+      - ".github/workflows/profile-stats.yml"
+      - "scripts/generate_profile_cards.py"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate stats, streak and activity cards
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          # Optional: add a repo secret named STATS_TOKEN (a token with read:user) to also
+          # count private contributions. Without it the default token is used.
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_profile_cards.py
+
+      - name: Commit refreshed cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats
+          git diff --cached --quiet || git commit -m "chore: refresh profile stats"
+          git push
