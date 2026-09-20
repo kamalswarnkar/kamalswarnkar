@@ -54,21 +54,27 @@ I'm looking for **ML / AI internships** where I can work on real experiments, le
 
 <sub>Live demos run on free hosting, so the first visit may take a few seconds to wake up.</sub>
 
-## Applied AI work
+## More projects
 
 - **AI Clipping Studio:** a fully local, offline tool that turns long videos into short vertical clips. It transcribes with faster-whisper, picks the best moments with local LLMs through Ollama, and renders with FFmpeg. No cloud APIs.
 - **Lead-scoring automation:** an n8n workflow that scores incoming contact-form leads as Hot, Warm or Cold and drafts a suggested reply, using a local Ollama model instead of a paid API.
+- **PDF Toolkit:** a web app with around 13 PDF tools (compression, PDF to Word, PDF to image, image to PDF and more), deployed on Render with on-page SEO.
 
 ## Technical skills
 
-| Area | Tools |
+| Area | Tools & experience |
 |---|---|
 | **Machine learning** | `Scikit-learn` `XGBoost` `Pandas` `NumPy` `spaCy` `NLTK` `Matplotlib` `Seaborn` |
-| **ML workflow** | Feature engineering (TF-IDF) · model benchmarking · train/test evaluation · accuracy and F1-score |
-| **Applied AI & automation** | `Ollama` `faster-whisper` `n8n` `Prompt engineering` |
-| **Languages** | `Python` `C` `JavaScript` |
-| **Backend & data** | `Django` `Django REST Framework` `Celery` `Redis` `PostgreSQL` `JWT` |
-| **Tools & deployment** | `Git` `Docker` `Jupyter / Google Colab` `Postman` `Vercel` `Render` `Railway` |
+| **ML workflow** | Feature engineering (TF-IDF) · model benchmarking (Logistic Regression, Random Forest, SVM, XGBoost) · train/test evaluation (accuracy, F1-score) · model-serving optimization |
+| **Applied AI & LLMs** | `Ollama` `Qwen2.5` `faster-whisper` `FFmpeg` `Prompt engineering` |
+| **Automation** | `n8n` `Webhooks` `GitHub Actions` |
+| **Languages** | `Python` `C` `JavaScript` `TypeScript` |
+| **Backend & APIs** | `Django` `Django REST Framework` `FastAPI` `Celery` `JWT` · REST API design · async task queues · caching · query optimization |
+| **Databases** | `PostgreSQL` `Redis` |
+| **Frontend** | `React` `Vite` `HTML` `CSS` `MERN stack (training)` |
+| **Tools & deployment** | `Git` `Docker` `Linux` `Jupyter / Google Colab` `Postman` `VS Code` `Vercel` `Render` `Railway` |
+| **CS fundamentals** | GATE 2026 (CS/IT) qualified: algorithms, databases, operating systems, computer networks |
+| **Currently learning** | `PyTorch` `Hugging Face Transformers` · deep learning fundamentals |
 
 ## Development activity
 
