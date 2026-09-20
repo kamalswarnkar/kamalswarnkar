@@ -153,6 +153,19 @@ def streaks(counts, today):
     return cur, cur_range, best, best_range
 
 
+def consistency_grade(active_days, window=90):
+    """Letter for how many of the last `window` days had at least one contribution.
+
+    This is our own, transparent scale (not an official GitHub grade):
+    A+ >= 85%, A >= 75%, B+ >= 65%, B >= 55%, C+ >= 45%, otherwise C.
+    """
+    pct = 100.0 * active_days / window
+    for floor, letter in ((85, "A+"), (75, "A"), (65, "B+"), (55, "B"), (45, "C+")):
+        if pct >= floor:
+            return letter
+    return "C"
+
+
 def fmt_day(d, with_year=False):
     s = f"{d.strftime('%b')} {d.day}"
     return f"{s}, {d.year}" if with_year else s
@@ -230,17 +243,17 @@ def stats_svg(m, today):
         ("Languages Used", m["languages"]),
         ("Contributed To", m["contributed_to"]),
     ]
-    out = head(w, h, "GitHub overview", "Repositories, commits, languages and recent activity")
+    out = head(w, h, "GitHub overview", "Repositories, commits, languages and a consistency grade based on the last 90 days")
     out += card_title(f"{m['name']}'s GitHub Stats")
     for i, (label, value) in enumerate(rows):
         y = 90 + i * 25
         out += f'    <text x="30" y="{y}" font-size="14" fill="#94A3B8">{label}</text>\n'
         out += f'    <text x="285" y="{y}" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">{value:,}</text>\n'
     active = m["active90"]
-    out += ring(395, 112, 44, active / 90)
-    out += f'    <text x="395" y="122" font-size="32" font-weight="800" fill="#F8FAFC" text-anchor="middle">{active}</text>\n'
-    out += '    <text x="395" y="140" font-size="11" fill="#94A3B8" text-anchor="middle">of 90 days</text>\n'
-    out += '    <text x="395" y="180" font-size="11" letter-spacing="1.5" fill="#64748B" text-anchor="middle">ACTIVE DAYS</text>\n'
+    out += ring(395, 108, 44, active / 90)
+    out += f'    <text x="395" y="120" font-size="34" font-weight="800" fill="#F8FAFC" text-anchor="middle">{consistency_grade(active)}</text>\n'
+    out += '    <text x="395" y="172" font-size="11" letter-spacing="1.5" fill="#64748B" text-anchor="middle">CONSISTENCY</text>\n'
+    out += f'    <text x="395" y="188" font-size="11" fill="#94A3B8" text-anchor="middle">{active} of 90 days active</text>\n'
     return out + tail()
 
 
