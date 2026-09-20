@@ -26,7 +26,8 @@ FONT = "'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif"
 # --------------------------------------------------------------------------- data
 
 PROFILE_Q = """
-query($login: String!) {
+query($login: String!, $prQuery: String!) {
+  prSearch: search(query: $prQuery, type: ISSUE, first: 1) { issueCount }
   user(login: $login) {
     name
     login
@@ -36,6 +37,7 @@ query($login: String!) {
       totalCount
       nodes { languages(first: 10) { nodes { name } } }
     }
+    pullRequests { totalCount }
     repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]) {
       totalCount
     }
@@ -85,7 +87,9 @@ def gql(query, variables):
 
 def fetch():
     """Return everything the cards need."""
-    prof = gql(PROFILE_Q, {"login": USER})["user"]
+    first = gql(PROFILE_Q, {"login": USER, "prQuery": f"author:{USER} type:pr"})
+    prof = first["user"]
+    pr_count = max(first["prSearch"]["issueCount"], prof["pullRequests"]["totalCount"])
     years = prof["contributionsCollection"]["contributionYears"]
     counts = {}
     commits = 0
@@ -103,6 +107,7 @@ def fetch():
         "created": datetime.fromisoformat(prof["createdAt"].replace("Z", "+00:00")).date(),
         "followers": prof["followers"]["totalCount"],
         "repos": prof["repositories"]["totalCount"],
+        "prs": pr_count,
         "languages": len(
             {
                 lang["name"]
@@ -210,9 +215,12 @@ def stats_svg(m, today):
     rows = [
         ("Public Repositories", m["repos"]),
         ("Total Commits", m["commits"]),
+    ]
+    # Only show pull requests when there are some; otherwise show followers instead.
+    rows.append(("Pull Requests", m["prs"]) if m["prs"] > 0 else ("Followers", m["followers"]))
+    rows += [
         ("Languages Used", m["languages"]),
         ("Contributed To", m["contributed_to"]),
-        ("Followers", m["followers"]),
     ]
     out = head(w, h, "GitHub overview", "Repositories, commits, languages and recent activity")
     out += card_title(f"{m['name']}'s GitHub Stats")
