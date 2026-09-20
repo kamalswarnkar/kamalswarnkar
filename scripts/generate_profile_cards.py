@@ -21,8 +21,6 @@ TOKEN = os.environ.get("GH_TOKEN", "")
 OUT_DIR = os.environ.get("OUT_DIR", "assets/stats")
 API = "https://api.github.com/graphql"
 
-SHOW_GRADE = True  # set to False to replace the grade ring with a plain "Repositories" figure
-
 FONT = "'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif"
 
 # --------------------------------------------------------------------------- data
@@ -36,10 +34,8 @@ query($login: String!) {
     followers { totalCount }
     repositories(ownerAffiliations: [OWNER], isFork: false, privacy: PUBLIC, first: 100) {
       totalCount
-      nodes { stargazerCount }
+      nodes { languages(first: 10) { nodes { name } } }
     }
-    pullRequests { totalCount }
-    issues { totalCount }
     repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]) {
       totalCount
     }
@@ -53,7 +49,6 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
     contributionsCollection(from: $from, to: $to) {
       totalCommitContributions
-      totalPullRequestReviewContributions
       contributionCalendar {
         totalContributions
         weeks { contributionDays { date contributionCount } }
@@ -93,14 +88,13 @@ def fetch():
     prof = gql(PROFILE_Q, {"login": USER})["user"]
     years = prof["contributionsCollection"]["contributionYears"]
     counts = {}
-    commits = reviews = 0
+    commits = 0
     for year in years:
         data = gql(
             YEAR_Q,
             {"login": USER, "from": f"{year}-01-01T00:00:00Z", "to": f"{year}-12-31T23:59:59Z"},
         )["user"]["contributionsCollection"]
         commits += data["totalCommitContributions"]
-        reviews += data["totalPullRequestReviewContributions"]
         for week in data["contributionCalendar"]["weeks"]:
             for day in week["contributionDays"]:
                 counts[date.fromisoformat(day["date"])] = day["contributionCount"]
@@ -109,12 +103,15 @@ def fetch():
         "created": datetime.fromisoformat(prof["createdAt"].replace("Z", "+00:00")).date(),
         "followers": prof["followers"]["totalCount"],
         "repos": prof["repositories"]["totalCount"],
-        "stars": sum(n["stargazerCount"] for n in prof["repositories"]["nodes"]),
-        "prs": prof["pullRequests"]["totalCount"],
-        "issues": prof["issues"]["totalCount"],
+        "languages": len(
+            {
+                lang["name"]
+                for repo in prof["repositories"]["nodes"]
+                for lang in repo["languages"]["nodes"]
+            }
+        ),
         "contributed_to": prof["repositoriesContributedTo"]["totalCount"],
         "commits": commits,
-        "reviews": reviews,
         "days": counts,
     }
 
@@ -145,32 +142,6 @@ def streaks(counts, today):
         else:
             run = 0
     return cur, cur_range, best, best_range
-
-
-def grade(commits, prs, issues, reviews, stars, followers):
-    """Grade in the same spirit as the popular github-readme-stats rank (approximation)."""
-
-    def exp_cdf(x):
-        return 1 - 2 ** -x
-
-    def log_cdf(x):
-        return x / (1 + x)
-
-    score = (
-        2 * exp_cdf(commits / 1000)
-        + 3 * exp_cdf(prs / 50)
-        + 1 * exp_cdf(issues / 25)
-        + 1 * exp_cdf(reviews / 2)
-        + 4 * log_cdf(stars / 50)
-        + 1 * log_cdf(followers / 10)
-    )
-    percentile = (1 - score / 12) * 100  # lower is better
-    thresholds = [1, 12.5, 25, 37.5, 50, 62.5, 75, 87.5, 100]
-    levels = ["S", "A+", "A", "A-", "B+", "B", "B-", "C+", "C"]
-    for t, level in zip(thresholds, levels):
-        if percentile <= t:
-            return level, max(0.0, min(1.0, 1 - percentile / 100))
-    return "C", 0.0
 
 
 def fmt_day(d, with_year=False):
@@ -234,30 +205,26 @@ def ring(cx, cy, r, fraction, stroke_w=8):
     )
 
 
-def stats_svg(m):
+def stats_svg(m, today):
     w, h = 495, 205
-    if SHOW_GRADE:
-        letter, fraction = m["grade"]
     rows = [
-        ("Total Stars Earned", m["stars"]),
+        ("Public Repositories", m["repos"]),
         ("Total Commits", m["commits"]),
-        ("Total Pull Requests", m["prs"]),
-        ("Total Issues", m["issues"]),
+        ("Languages Used", m["languages"]),
         ("Contributed To", m["contributed_to"]),
+        ("Followers", m["followers"]),
     ]
-    out = head(w, h, "GitHub stats", "Stars, commits, pull requests, issues and overall grade")
+    out = head(w, h, "GitHub overview", "Repositories, commits, languages and recent activity")
     out += card_title(f"{m['name']}'s GitHub Stats")
     for i, (label, value) in enumerate(rows):
         y = 90 + i * 25
         out += f'    <text x="30" y="{y}" font-size="14" fill="#94A3B8">{label}</text>\n'
         out += f'    <text x="285" y="{y}" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">{value:,}</text>\n'
-    if SHOW_GRADE:
-        out += ring(395, 112, 44, fraction)
-        out += f'    <text x="395" y="124" font-size="34" font-weight="800" fill="#F8FAFC" text-anchor="middle">{letter}</text>\n'
-        out += '    <text x="395" y="180" font-size="11" letter-spacing="1.5" fill="#64748B" text-anchor="middle">OVERALL GRADE</text>\n'
-    else:
-        out += f'    <text x="395" y="124" font-size="34" font-weight="800" fill="#F8FAFC" text-anchor="middle">{m["repos"]}</text>\n'
-        out += '    <text x="395" y="150" font-size="11" letter-spacing="1.5" fill="#64748B" text-anchor="middle">REPOSITORIES</text>\n'
+    active = m["active90"]
+    out += ring(395, 112, 44, active / 90)
+    out += f'    <text x="395" y="122" font-size="32" font-weight="800" fill="#F8FAFC" text-anchor="middle">{active}</text>\n'
+    out += '    <text x="395" y="140" font-size="11" fill="#94A3B8" text-anchor="middle">of 90 days</text>\n'
+    out += '    <text x="395" y="180" font-size="11" letter-spacing="1.5" fill="#64748B" text-anchor="middle">ACTIVE DAYS</text>\n'
     return out + tail()
 
 
@@ -321,14 +288,14 @@ def activity_svg(m, today, span=30):
 def build(data, today):
     m = dict(data)
     m["streaks"] = streaks(data["days"], today)
-    m["grade"] = grade(data["commits"], data["prs"], data["issues"], data["reviews"], data["stars"], data["followers"])
+    m["active90"] = sum(1 for i in range(90) if data["days"].get(today - timedelta(days=i), 0) > 0)
     return m
 
 
 def write_all(m, today, out_dir):
     os.makedirs(out_dir, exist_ok=True)
     files = {
-        "stats.svg": stats_svg(m),
+        "stats.svg": stats_svg(m, today),
         "streak.svg": streak_svg(m, today),
         "activity.svg": activity_svg(m, today),
     }
