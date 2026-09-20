@@ -21,13 +21,13 @@
     <text x="30" y="90" font-size="14" fill="#94A3B8">Public Repositories</text>
     <text x="285" y="90" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">23</text>
     <text x="30" y="115" font-size="14" fill="#94A3B8">Total Commits</text>
-    <text x="285" y="115" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">662</text>
-    <text x="30" y="140" font-size="14" fill="#94A3B8">Languages Used</text>
-    <text x="285" y="140" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">16</text>
-    <text x="30" y="165" font-size="14" fill="#94A3B8">Contributed To</text>
-    <text x="285" y="165" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">3</text>
-    <text x="30" y="190" font-size="14" fill="#94A3B8">Followers</text>
-    <text x="285" y="190" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">9</text>
+    <text x="285" y="115" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">663</text>
+    <text x="30" y="140" font-size="14" fill="#94A3B8">Pull Requests</text>
+    <text x="285" y="140" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">2</text>
+    <text x="30" y="165" font-size="14" fill="#94A3B8">Languages Used</text>
+    <text x="285" y="165" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">16</text>
+    <text x="30" y="190" font-size="14" fill="#94A3B8">Contributed To</text>
+    <text x="285" y="190" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">3</text>
     <circle cx="395" cy="112" r="44" fill="none" stroke="#1E2A47" stroke-width="8"/>
     <circle cx="395" cy="112" r="44" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="190.5 276.5" transform="rotate(-90 395 112)"/>
     <text x="395" y="122" font-size="32" font-weight="800" fill="#F8FAFC" text-anchor="middle">62</text>

@@ -18,7 +18,7 @@
   <g font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif">
     <text x="30" y="42" font-size="18" font-weight="700" fill="#F8FAFC">Contribution activity · last 30 days</text>
     <rect x="30" y="52" width="44" height="3" rx="1.5" fill="url(#accent)"/>
-    <text x="970" y="42" font-size="13" fill="#94A3B8" text-anchor="end">98 contributions</text>
+    <text x="970" y="42" font-size="13" fill="#94A3B8" text-anchor="end">99 contributions</text>
     <line x1="70" y1="244.0" x2="960" y2="244.0" stroke="#26314D" stroke-dasharray="3 5"/>
     <text x="58" y="248.0" font-size="11" fill="#64748B" text-anchor="end">0</text>
     <line x1="70" y1="206.0" x2="960" y2="206.0" stroke="#26314D" stroke-dasharray="3 5"/>
@@ -29,8 +29,8 @@
     <text x="58" y="134.0" font-size="11" fill="#64748B" text-anchor="end">12</text>
     <line x1="70" y1="92.0" x2="960" y2="92.0" stroke="#26314D" stroke-dasharray="3 5"/>
     <text x="58" y="96.0" font-size="11" fill="#64748B" text-anchor="end">16</text>
-    <polygon points="70.0,244 70.0,225.0 100.7,234.5 131.4,206.0 162.1,215.5 192.8,244.0 223.4,244.0 254.1,244.0 284.8,244.0 315.5,244.0 346.2,206.0 376.9,234.5 407.6,234.5 438.3,215.5 469.0,225.0 499.7,206.0 530.3,196.5 561.0,215.5 591.7,225.0 622.4,196.5 653.1,196.5 683.8,196.5 714.5,225.0 745.2,168.0 775.9,187.0 806.6,149.0 837.2,187.0 867.9,215.5 898.6,244.0 929.3,244.0 960.0,120.5 960.0,244" fill="url(#area)"/>
-    <polyline points="70.0,225.0 100.7,234.5 131.4,206.0 162.1,215.5 192.8,244.0 223.4,244.0 254.1,244.0 284.8,244.0 315.5,244.0 346.2,206.0 376.9,234.5 407.6,234.5 438.3,215.5 469.0,225.0 499.7,206.0 530.3,196.5 561.0,215.5 591.7,225.0 622.4,196.5 653.1,196.5 683.8,196.5 714.5,225.0 745.2,168.0 775.9,187.0 806.6,149.0 837.2,187.0 867.9,215.5 898.6,244.0 929.3,244.0 960.0,120.5" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <polygon points="70.0,244 70.0,225.0 100.7,234.5 131.4,206.0 162.1,215.5 192.8,244.0 223.4,244.0 254.1,244.0 284.8,244.0 315.5,244.0 346.2,206.0 376.9,234.5 407.6,234.5 438.3,215.5 469.0,225.0 499.7,206.0 530.3,196.5 561.0,215.5 591.7,225.0 622.4,196.5 653.1,196.5 683.8,196.5 714.5,225.0 745.2,168.0 775.9,187.0 806.6,149.0 837.2,187.0 867.9,215.5 898.6,244.0 929.3,244.0 960.0,111.0 960.0,244" fill="url(#area)"/>
+    <polyline points="70.0,225.0 100.7,234.5 131.4,206.0 162.1,215.5 192.8,244.0 223.4,244.0 254.1,244.0 284.8,244.0 315.5,244.0 346.2,206.0 376.9,234.5 407.6,234.5 438.3,215.5 469.0,225.0 499.7,206.0 530.3,196.5 561.0,215.5 591.7,225.0 622.4,196.5 653.1,196.5 683.8,196.5 714.5,225.0 745.2,168.0 775.9,187.0 806.6,149.0 837.2,187.0 867.9,215.5 898.6,244.0 929.3,244.0 960.0,111.0" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
     <circle cx="70.0" cy="225.0" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>
     <circle cx="100.7" cy="234.5" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>
     <circle cx="131.4" cy="206.0" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>
@@ -53,7 +53,7 @@
     <circle cx="806.6" cy="149.0" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>
     <circle cx="837.2" cy="187.0" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>
     <circle cx="867.9" cy="215.5" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>
-    <circle cx="960.0" cy="120.5" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>
+    <circle cx="960.0" cy="111.0" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>
     <text x="70.0" y="268" font-size="11" fill="#64748B" text-anchor="middle">Aug 22</text>
     <text x="223.4" y="268" font-size="11" fill="#64748B" text-anchor="middle">Aug 27</text>
     <text x="376.9" y="268" font-size="11" fill="#64748B" text-anchor="middle">Sep 1</text>
