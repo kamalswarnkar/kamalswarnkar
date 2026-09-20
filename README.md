@@ -1,129 +1,76 @@
-<h1 align="center">SYSTEM INITIALIZING...</h1>
+<div align="center">
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=26&duration=2500&color=00FF00&center=true&vCenter=true&width=700&lines=Kamal+Swarnkar;AI+%2B+Backend+Developer;Django+%7C+Machine+Learning;100%2B+DSA+Problems+Solved;Building+Production+Ready+Systems" />
-</p>
+<img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/banner.svg" alt="Kamal Swarnkar - Machine Learning, Applied AI and Backend Systems" width="100%">
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=18&duration=1800&color=00FF00&center=true&vCenter=true&width=500&lines=Loading+Developer+Profile...;Syncing+GitHub+Activity...;Deploying+Systems..." />
-</p>
+<br>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/kamalswarnkar/kamalswarnkar/main/assets/omnitrix-core.webp" width="240"/>
-</p>
+<a href="https://portfolio-kamal-four.vercel.app"><img src="https://img.shields.io/badge/Portfolio-6366F1?style=flat-square" alt="Portfolio"></a>
+<a href="https://www.linkedin.com/in/kamal-swarnkar-93x/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square" alt="LinkedIn"></a>
+<a href="mailto:swarnkar889@gmail.com"><img src="https://img.shields.io/badge/Email-0F172A?style=flat-square" alt="Email"></a>
+<img src="https://img.shields.io/badge/Open%20to-ML%20%2F%20AI%20internships-16A34A?style=flat-square" alt="Open to ML / AI internships">
 
----
+</div>
 
-## PROFILE
+## About me
 
-```yaml
-Name: Kamal Swarnkar
-Role: AI, ML + Backend Developer
-Focus: Backend Systems • Artificial Intelligence • Machine Learning • Problem Solving
-Tech Interests: AI Systems • System Design • ML Integration
-Status: Continuously Building & Learning
-Mission: Build scalable real-world systems and grow into advanced AI-ML engineering
-```
+I'm a B.Tech Computer Science & Engineering student (AI/ML specialization) at Lovely Professional University. I like taking machine learning all the way from a notebook experiment to something that runs reliably behind an API. My projects cover the full workflow: feature engineering, benchmarking models, honest evaluation, and the asynchronous backends that serve them.
 
----
+I'm looking for **ML / AI internships** where I can work on real experiments, learn from experienced engineers, and grow toward applied AI engineering.
 
-## TECH STACK
+- **Education:** B.Tech CSE (AI/ML specialization), Lovely Professional University, CGPA 8.90
+- **GATE 2026 (CS/IT):** score 383, AIR 21,411, qualified in the first attempt
+- **Focus:** machine learning, text classification and scoring pipelines, ML-serving backends
+- **Currently:** strengthening ML fundamentals and moving into deep learning (PyTorch, Hugging Face)
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,django,c,js,html,css,git,github,vscode" />
-</p>
+## Featured projects
 
----
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>AI Career Lab</h3>
+<p>ML-powered career guidance platform that predicts career paths and analyzes skill gaps.</p>
+<ul>
+<li>Benchmarked Logistic Regression, Random Forest and SVM on TF-IDF features: <b>86.6% accuracy (F1 0.86)</b> with only a 1.23% train/test gap</li>
+<li>Cut analysis latency from <b>5.8 s to ~180 ms</b> and scaled throughput to <b>500 req/min</b> with Celery + Redis workers</li>
+</ul>
+<p><code>Python</code> <code>Django</code> <code>Scikit-learn</code> <code>Celery</code> <code>Redis</code></p>
+<p><a href="https://ai-career-lab.onrender.com/">Live demo</a> · <a href="https://github.com/kamalswarnkar/AI-Career-Lab">Source code</a></p>
+</td>
+<td width="50%" valign="top">
+<h3>Resumix</h3>
+<p>Resume analysis and role-prediction platform that evaluates ATS compatibility.</p>
+<ul>
+<li>Built a multi-factor scoring pipeline (TF-IDF, skill matching, experience analysis, ATS evaluation) with Scikit-learn, XGBoost, spaCy and NLTK behind a JWT-secured REST API</li>
+<li>Cut model inference from <b>16 ms to ~2 ms</b> with in-memory loading, and API response time from <b>3.2 s to ~400 ms</b> with async pipelines</li>
+</ul>
+<p><code>Python</code> <code>Django REST Framework</code> <code>Scikit-learn</code> <code>XGBoost</code> <code>PostgreSQL</code></p>
+<p><a href="https://resumix-ygb9.onrender.com/">Live demo</a> · <a href="https://github.com/kamalswarnkar/Resumix">Source code</a></p>
+</td>
+</tr>
+</table>
 
-## PROJECTS
+<sub>Live demos run on free hosting, so the first visit may take a few seconds to wake up.</sub>
 
-### AI Career Lab
+**Also built: AI Clipping Studio.** A fully local, offline tool that turns long videos into short vertical clips: transcription with faster-whisper, moment selection with local LLMs through Ollama, and rendering with FFmpeg. No cloud APIs.
 
-> AI-powered platform that predicts career paths and analyzes skill gaps
+## Technical skills
 
-- ML + Django powered
-- Live Demo: https://ai-career-lab.onrender.com
+| Area | Tools |
+|---|---|
+| **Machine learning** | `Scikit-learn` `XGBoost` `Pandas` `NumPy` `spaCy` `NLTK` `Matplotlib` `Seaborn` |
+| **ML workflow** | Feature engineering (TF-IDF) · model benchmarking · train/test evaluation · accuracy and F1-score |
+| **Languages** | `Python` `C` `JavaScript` |
+| **Backend & data** | `Django` `Django REST Framework` `Celery` `Redis` `PostgreSQL` `JWT` |
+| **Local LLM tooling** | `Ollama` `faster-whisper` |
+| **Tools & deployment** | `Git` `Docker` `Jupyter / Google Colab` `Postman` `Vercel` `Render` `Railway` |
 
----
+## Highlights
 
-### RepMate (IN PROGRESS)
+- **GATE 2026 (CS/IT):** AIR 21,411 (Feb 2026)
+- **MEDHA 2024 Hackathon:** ranked 10th of 60 teams (Sep 2024)
+- **Training:** FLAMES '25, MERN with Gen AI (W3grads), Jul 2025 · Youth Research Program, Resolute Lab, Mar 2025
+- **Certificates:** Generative AI & Generative AI Tools · ChatGPT-4 Prompt Engineering: Generative AI & LLM (Infosys Springboard, Aug 2025)
 
-> Personalized AI-powered assistant currently under development
+## Get in touch
 
-- Backend + AI focused architecture
-- Continuously evolving
-
----
-
-## DEVELOPMENT METRICS
-
-<p align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=kamalswarnkar&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0D1117" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=kamalswarnkar&theme=chartreuse-dark&hide_border=true&background=0D1117" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=kamalswarnkar&theme=github_dark" />
-</p>
-
----
-
-## EXPERIENCE
-
-- Solved 100+ DSA problems
-- Building backend + AI systems
-- Developing production-ready projects
-- Exploring scalable architecture and ML integration
-
----
-
-## ACTIVITY GRAPH
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kamalswarnkar&theme=github-compact&bg_color=0d1117&hide_border=true&color=00ff00&line=00ff00&point=ffffff" />
-</p>
-
----
-
-## CURRENT FOCUS
-
-- Developing RepMate
-- Scaling DSA to 500+
-- Advancing into deeper AI systems
-- Strengthening backend engineering skills
-
----
-
-## CONTACT
-
-<p align="center">
-  <a href="mailto:swarnkar889@gmail.com">
-    <img src="https://img.shields.io/badge/Email-00FF00?style=for-the-badge&logo=gmail&logoColor=black"/>
-  </a>
-
-  <a href="https://linkedin.com/in/kamal-swarnkar-93x">
-    <img src="https://img.shields.io/badge/LinkedIn-00FF00?style=for-the-badge&logo=linkedin&logoColor=black"/>
-  </a>
-
-  <a href="https://leetcode.com/u/rKEOhdvRNa">
-    <img src="https://img.shields.io/badge/LeetCode-00FF00?style=for-the-badge&logo=leetcode&logoColor=black"/>
-  </a>
-</p>
-
----
-
-## PHILOSOPHY
-
-> “Don’t wait for originality to begin; even creation starts from something.
-> You’re never at the starting line, only at the next step of evolution.”
-
----
-
-<h3 align="center">STATUS: ACTIVE | BUILDING | LEARNING</h3>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00ff00&height=120&section=footer"/>
-</p>
+The best way to reach me is by [email](mailto:swarnkar889@gmail.com) or on [LinkedIn](https://www.linkedin.com/in/kamal-swarnkar-93x/). My [portfolio](https://portfolio-kamal-four.vercel.app) has more about my work.
