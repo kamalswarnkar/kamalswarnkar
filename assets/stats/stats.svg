@@ -21,7 +21,7 @@
     <text x="30" y="90" font-size="14" fill="#94A3B8">Public Repositories</text>
     <text x="285" y="90" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">23</text>
     <text x="30" y="115" font-size="14" fill="#94A3B8">Total Commits</text>
-    <text x="285" y="115" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">678</text>
+    <text x="285" y="115" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">683</text>
     <text x="30" y="140" font-size="14" fill="#94A3B8">Pull Requests</text>
     <text x="285" y="140" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">2</text>
     <text x="30" y="165" font-size="14" fill="#94A3B8">Languages Used</text>
