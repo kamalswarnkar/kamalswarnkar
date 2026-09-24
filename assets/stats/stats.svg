@@ -21,7 +21,7 @@
     <text x="30" y="90" font-size="14" fill="#94A3B8">Public Repositories</text>
     <text x="285" y="90" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">23</text>
     <text x="30" y="115" font-size="14" fill="#94A3B8">Total Commits</text>
-    <text x="285" y="115" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">683</text>
+    <text x="285" y="115" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">688</text>
     <text x="30" y="140" font-size="14" fill="#94A3B8">Pull Requests</text>
     <text x="285" y="140" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">2</text>
     <text x="30" y="165" font-size="14" fill="#94A3B8">Languages Used</text>
@@ -30,9 +30,9 @@
     <text x="285" y="190" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">3</text>
     <style>@keyframes sweep395 { from { stroke-dasharray: 0 276.5; } } .sweep395 { animation: sweep395 1.6s cubic-bezier(.2,.7,.2,1) both; } @media (prefers-reduced-motion: reduce) { .sweep395 { animation: none; } }</style>
     <circle cx="395" cy="108" r="44" fill="none" stroke="#1E2A47" stroke-width="8"/>
-    <circle class="sweep395" cx="395" cy="108" r="44" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="193.5 276.5" transform="rotate(-90 395 108)"/>
+    <circle class="sweep395" cx="395" cy="108" r="44" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="190.5 276.5" transform="rotate(-90 395 108)"/>
     <text x="395" y="120" font-size="34" font-weight="800" fill="#F8FAFC" text-anchor="middle">B+</text>
     <text x="395" y="172" font-size="11" letter-spacing="1.5" fill="#64748B" text-anchor="middle">CONSISTENCY</text>
-    <text x="395" y="188" font-size="11" fill="#94A3B8" text-anchor="middle">63 of 90 days active</text>
+    <text x="395" y="188" font-size="11" fill="#94A3B8" text-anchor="middle">62 of 90 days active</text>
   </g>
 </svg>
