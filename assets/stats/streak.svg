@@ -18,15 +18,15 @@
   <g font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif">
     <line x1="165" y1="34" x2="165" y2="162" stroke="#26314D"/>
     <line x1="330" y1="34" x2="330" y2="162" stroke="#26314D"/>
-    <text x="82" y="96" font-size="34" font-weight="800" fill="#F8FAFC" text-anchor="middle">725</text>
+    <text x="82" y="96" font-size="34" font-weight="800" fill="#F8FAFC" text-anchor="middle">726</text>
     <text x="82" y="130" font-size="14" font-weight="600" fill="#A5B4FC" text-anchor="middle">Total Contributions</text>
     <text x="82" y="152" font-size="12" fill="#94A3B8" text-anchor="middle">Oct 26, 2023 – Present</text>
     <style>@keyframes sweep247 { from { stroke-dasharray: 0 226.2; } } .sweep247 { animation: sweep247 1.6s cubic-bezier(.2,.7,.2,1) both; } @media (prefers-reduced-motion: reduce) { .sweep247 { animation: none; } }</style>
     <circle cx="247" cy="82" r="36" fill="none" stroke="#1E2A47" stroke-width="8"/>
-    <circle class="sweep247" cx="247" cy="82" r="36" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="50.3 226.2" transform="rotate(-90 247 82)"/>
-    <text x="247" y="93" font-size="30" font-weight="800" fill="#F8FAFC" text-anchor="middle">4</text>
+    <circle class="sweep247" cx="247" cy="82" r="36" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="12.6 226.2" transform="rotate(-90 247 82)"/>
+    <text x="247" y="93" font-size="30" font-weight="800" fill="#F8FAFC" text-anchor="middle">1</text>
     <text x="247" y="144" font-size="14" font-weight="600" fill="#22D3EE" text-anchor="middle">Current Streak</text>
-    <text x="247" y="164" font-size="12" fill="#94A3B8" text-anchor="middle">Sep 20 – Sep 23</text>
+    <text x="247" y="164" font-size="12" fill="#94A3B8" text-anchor="middle">Sep 25</text>
     <text x="412" y="96" font-size="34" font-weight="800" fill="#F8FAFC" text-anchor="middle">18</text>
     <text x="412" y="130" font-size="14" font-weight="600" fill="#A5B4FC" text-anchor="middle">Longest Streak</text>
     <text x="412" y="152" font-size="12" fill="#94A3B8" text-anchor="middle">Aug 31 – Sep 17</text>
