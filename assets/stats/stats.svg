@@ -19,7 +19,7 @@
     <text x="30" y="42" font-size="18" font-weight="700" fill="#F8FAFC">Kamal's GitHub Stats</text>
     <rect x="30" y="52" width="44" height="3" rx="1.5" fill="url(#accent)"/>
     <text x="30" y="90" font-size="14" fill="#94A3B8">Public Repositories</text>
-    <text x="285" y="90" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">23</text>
+    <text x="285" y="90" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">24</text>
     <text x="30" y="115" font-size="14" fill="#94A3B8">Total Commits</text>
     <text x="285" y="115" font-size="14" font-weight="700" fill="#F8FAFC" text-anchor="end">697</text>
     <text x="30" y="140" font-size="14" fill="#94A3B8">Pull Requests</text>
