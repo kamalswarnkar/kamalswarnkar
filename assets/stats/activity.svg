@@ -18,7 +18,7 @@
   <g font-family="'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif">
     <text x="30" y="42" font-size="18" font-weight="700" fill="#F8FAFC">Contribution activity · last 30 days</text>
     <rect x="30" y="52" width="44" height="3" rx="1.5" fill="url(#accent)"/>
-    <text x="970" y="42" font-size="13" fill="#94A3B8" text-anchor="end">1 contributions</text>
+    <text x="970" y="42" font-size="13" fill="#94A3B8" text-anchor="end">0 contributions</text>
     <line x1="70" y1="244.0" x2="960" y2="244.0" stroke="#26314D" stroke-dasharray="3 5"/>
     <text x="58" y="248.0" font-size="11" fill="#64748B" text-anchor="end">0</text>
     <line x1="70" y1="206.0" x2="960" y2="206.0" stroke="#26314D" stroke-dasharray="3 5"/>
@@ -29,16 +29,15 @@
     <text x="58" y="134.0" font-size="11" fill="#64748B" text-anchor="end">3</text>
     <line x1="70" y1="92.0" x2="960" y2="92.0" stroke="#26314D" stroke-dasharray="3 5"/>
     <text x="58" y="96.0" font-size="11" fill="#64748B" text-anchor="end">4</text>
-    <style>.draw { animation: draw 10s linear infinite; } .areain { animation: areain 10s linear infinite; } @keyframes draw { 0%, 3.9% { stroke-dashoffset: 911; opacity: 0; } 4% { stroke-dashoffset: 911; opacity: 1; } 36% { stroke-dashoffset: 0; opacity: 1; } 90% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } } @keyframes areain { 0%, 20% { opacity: 0; } 42% { opacity: 1; } 90% { opacity: 1; } 100% { opacity: 0; } } .pop0 { animation: pop0 10s linear infinite; } @keyframes pop0 { 0%, 4.0% { opacity: 0; } 5.5% { opacity: 1; } 90% { opacity: 1; } 100% { opacity: 0; } } @media (prefers-reduced-motion: reduce) { .draw, .areain, [class^=pop] { animation: none; } }</style>
-    <path class="areain" d="M 70.0,206.0 L 100.7,244.0 L 131.4,244.0 L 162.1,244.0 L 192.8,244.0 L 223.4,244.0 L 254.1,244.0 L 284.8,244.0 L 315.5,244.0 L 346.2,244.0 L 376.9,244.0 L 407.6,244.0 L 438.3,244.0 L 469.0,244.0 L 499.7,244.0 L 530.3,244.0 L 561.0,244.0 L 591.7,244.0 L 622.4,244.0 L 653.1,244.0 L 683.8,244.0 L 714.5,244.0 L 745.2,244.0 L 775.9,244.0 L 806.6,244.0 L 837.2,244.0 L 867.9,244.0 L 898.6,244.0 L 929.3,244.0 L 960.0,244.0 L 960.0,244 L 70.0,244 Z" fill="url(#area)"/>
-    <path class="draw" d="M 70.0,206.0 L 100.7,244.0 L 131.4,244.0 L 162.1,244.0 L 192.8,244.0 L 223.4,244.0 L 254.1,244.0 L 284.8,244.0 L 315.5,244.0 L 346.2,244.0 L 376.9,244.0 L 407.6,244.0 L 438.3,244.0 L 469.0,244.0 L 499.7,244.0 L 530.3,244.0 L 561.0,244.0 L 591.7,244.0 L 622.4,244.0 L 653.1,244.0 L 683.8,244.0 L 714.5,244.0 L 745.2,244.0 L 775.9,244.0 L 806.6,244.0 L 837.2,244.0 L 867.9,244.0 L 898.6,244.0 L 929.3,244.0 L 960.0,244.0" stroke-dasharray="911" stroke-dashoffset="0" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linejoin="round"/>
-    <circle class="pop0" cx="70.0" cy="206.0" r="3.4" fill="#22D3EE" stroke="#0B1120" stroke-width="1.5"/>
-    <text x="70.0" y="268" font-size="11" fill="#64748B" text-anchor="middle">Oct 20</text>
-    <text x="223.4" y="268" font-size="11" fill="#64748B" text-anchor="middle">Oct 25</text>
-    <text x="376.9" y="268" font-size="11" fill="#64748B" text-anchor="middle">Oct 30</text>
-    <text x="530.3" y="268" font-size="11" fill="#64748B" text-anchor="middle">Nov 4</text>
-    <text x="683.8" y="268" font-size="11" fill="#64748B" text-anchor="middle">Nov 9</text>
-    <text x="837.2" y="268" font-size="11" fill="#64748B" text-anchor="middle">Nov 14</text>
+    <style>.draw { animation: draw 10s linear infinite; } .areain { animation: areain 10s linear infinite; } @keyframes draw { 0%, 3.9% { stroke-dashoffset: 892; opacity: 0; } 4% { stroke-dashoffset: 892; opacity: 1; } 36% { stroke-dashoffset: 0; opacity: 1; } 90% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } } @keyframes areain { 0%, 20% { opacity: 0; } 42% { opacity: 1; } 90% { opacity: 1; } 100% { opacity: 0; } } @media (prefers-reduced-motion: reduce) { .draw, .areain, [class^=pop] { animation: none; } }</style>
+    <path class="areain" d="M 70.0,244.0 L 100.7,244.0 L 131.4,244.0 L 162.1,244.0 L 192.8,244.0 L 223.4,244.0 L 254.1,244.0 L 284.8,244.0 L 315.5,244.0 L 346.2,244.0 L 376.9,244.0 L 407.6,244.0 L 438.3,244.0 L 469.0,244.0 L 499.7,244.0 L 530.3,244.0 L 561.0,244.0 L 591.7,244.0 L 622.4,244.0 L 653.1,244.0 L 683.8,244.0 L 714.5,244.0 L 745.2,244.0 L 775.9,244.0 L 806.6,244.0 L 837.2,244.0 L 867.9,244.0 L 898.6,244.0 L 929.3,244.0 L 960.0,244.0 L 960.0,244 L 70.0,244 Z" fill="url(#area)"/>
+    <path class="draw" d="M 70.0,244.0 L 100.7,244.0 L 131.4,244.0 L 162.1,244.0 L 192.8,244.0 L 223.4,244.0 L 254.1,244.0 L 284.8,244.0 L 315.5,244.0 L 346.2,244.0 L 376.9,244.0 L 407.6,244.0 L 438.3,244.0 L 469.0,244.0 L 499.7,244.0 L 530.3,244.0 L 561.0,244.0 L 591.7,244.0 L 622.4,244.0 L 653.1,244.0 L 683.8,244.0 L 714.5,244.0 L 745.2,244.0 L 775.9,244.0 L 806.6,244.0 L 837.2,244.0 L 867.9,244.0 L 898.6,244.0 L 929.3,244.0 L 960.0,244.0" stroke-dasharray="892" stroke-dashoffset="0" fill="none" stroke="url(#accent)" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="70.0" y="268" font-size="11" fill="#64748B" text-anchor="middle">Oct 21</text>
+    <text x="223.4" y="268" font-size="11" fill="#64748B" text-anchor="middle">Oct 26</text>
+    <text x="376.9" y="268" font-size="11" fill="#64748B" text-anchor="middle">Oct 31</text>
+    <text x="530.3" y="268" font-size="11" fill="#64748B" text-anchor="middle">Nov 5</text>
+    <text x="683.8" y="268" font-size="11" fill="#64748B" text-anchor="middle">Nov 10</text>
+    <text x="837.2" y="268" font-size="11" fill="#64748B" text-anchor="middle">Nov 15</text>
     <text x="960.0" y="268" font-size="11" font-weight="600" fill="#94A3B8" text-anchor="middle">Today</text>
   </g>
 </svg>
